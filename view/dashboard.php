@@ -62,13 +62,13 @@
       $i = 1; 
       $totalhtml = "";
       foreach ($final_output as $class => $student_values) {
-        $html1 = '<h2>'.$class.'</h2>';
+        $html1 = '<fieldset><input type="checkbox" class="checkthis"><h2>'.$class.'</h2>';
         foreach ($student_values as $number_text => $number_and_names) {
           foreach ($number_and_names as $number => $names) {
             foreach ($names as $key => $name) {
               $html1 = $html1.'<span><label><input type="checkbox" name = "name[]" value="'.$number.'" >&nbsp;&nbsp;'.$name.'('.$number.')</label></span>';
             }
-          }$totalhtml = $totalhtml.'<div>'.$html1.'</div><hr/>';
+          }$totalhtml = $totalhtml.'<div>'.$html1.'</div><hr/></fieldset>';
         }
       } 
 
@@ -92,7 +92,10 @@
 
 <script type="text/javascript">
   
-
+$(function () {
+    $('.checkthis').on('click', function () {
+        $(this).closest('fieldset').find(':checkbox').prop('checked', this.checked);
+    });
 $('body').on('change', '#checkAll', function(){
       $("input:checkbox").prop('checked', $(this).prop("checked"));
     });

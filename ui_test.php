@@ -11,13 +11,13 @@
 
 	<fieldset>
     <!-- these will be affected by check all -->
-    <div><input type="checkbox" class="checkall"> Check all</div>
+    <div><input type="checkbox" class="checkthis"> Check all</div>
     <div><input type="checkbox"> Checkbox</div>
     <div><input type="checkbox"> Checkbox</div>
     <div><input type="checkbox"> Checkbox</div>
 </fieldset>
 <fieldset>
-   <div><input type="checkbox" class="checkall"> Check all</div>
+   <div><input type="checkbox" class="checkthis"> Check all</div>
     <div><input type="checkbox"> Checkbox</div>
     <div><input type="checkbox"> Checkbox</div>
     <div><input type="checkbox"> Checkbox</div>
