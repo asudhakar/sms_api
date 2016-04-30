@@ -17,7 +17,7 @@
     <div><input type="checkbox"> Checkbox</div>
 </fieldset>
 <fieldset>
-    <!-- these won't be affected by check all; different field set -->
+   <div><input type="checkbox" class="checkall"> Check all</div>
     <div><input type="checkbox"> Checkbox</div>
     <div><input type="checkbox"> Checkbox</div>
     <div><input type="checkbox"> Checkbox</div>
