@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome</title>
+  <title>Welcome</title>
 
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -9,7 +9,7 @@
   <style type="text/css">
 
   div>span{
-  	display: block;
+    display: block;
     font-size: 14px;
     margin-bottom: 9px;
   }
@@ -19,17 +19,17 @@
 <body>
 <?php 
 
-	include_once '../app_functions/default_functions.php';
+  include_once '../app_functions/default_functions.php';
 
-	if(array_key_exists("GROUP BY",$final_output)){
-		unset($final_output['GROUP BY']);
-	}
-
-
+  if(array_key_exists("GROUP BY",$final_output)){
+    unset($final_output['GROUP BY']);
+  }
 
 
 
-	
+
+
+  
  ?>
 <div class="container">
 
@@ -50,14 +50,14 @@
       $i = 1; 
       $totalhtml = "";
       foreach ($final_output as $class => $student_values) {
-      	$html1 = "<h2>$class</h2>";
-      	foreach ($student_values as $number_text => $number_and_names) {
-      		foreach ($number_and_names as $number => $names) {
-      			foreach ($names as $key => $name) {
-      				$html1 = $html1.'<span><input type="checkbox" name = "name[]" value="'.$number.'"> &nbsp;&nbsp;'.$name.'('.$number.')</span>';
-      			}
-      		}$totalhtml = $totalhtml.'<div>'.$html1.'</div><hr/>';
-      	}
+        $html1 = "<h2>$class</h2>";
+        foreach ($student_values as $number_text => $number_and_names) {
+          foreach ($number_and_names as $number => $names) {
+            foreach ($names as $key => $name) {
+              $html1 = $html1.'<span><label><input type="checkbox" name = "name[]" value="'.$number.'"> &nbsp;&nbsp;'.$name.'('.$number.')</label></span>';
+            }
+          }$totalhtml = $totalhtml.'<div>'.$html1.'</div><hr/>';
+        }
       } 
 
       echo "$totalhtml";
