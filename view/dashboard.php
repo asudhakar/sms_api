@@ -40,7 +40,9 @@
 <form method="post" action="message_process.php">
 
 <input type="hidden" name="path" value="<?php echo $file_path; ?>">
-<input type="checkbox" id="checkAll">Check All
+<div class="checkbox">
+  <label><input type="checkbox" id="checkAll">Check All</label>
+</div>
 
             
   <table class="table">
