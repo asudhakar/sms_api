@@ -54,7 +54,7 @@
         foreach ($student_values as $number_text => $number_and_names) {
           foreach ($number_and_names as $number => $names) {
             foreach ($names as $key => $name) {
-              $html1 = $html1.'<span><label><input type="checkbox" name = "name[]" value="'.$number.'"> &nbsp;&nbsp;'.$name.'('.$number.')</label></span>';
+              $html1 = $html1.'<span><label><input type="checkbox" name = "name[]" value="'.$number.'">'.$name.'('.$number.')</label></span>';
             }
           }$totalhtml = $totalhtml.'<div>'.$html1.'</div><hr/>';
         }
