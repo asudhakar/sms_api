@@ -34,7 +34,8 @@
 <div class="container">
  <div class="header clearfix">
         <nav>
-          <ul class="nav nav-pills pull-right">
+          <ul class="nav nav-pills pull-right" style="    margin-right: 13px;
+    margin-top: 58px;">
             <li role="presentation" class="active"><a href="../index.php">Home</a></li>
             <li role="presentation"><a href="http://vefetch.com/">About</a></li>
             <li role="presentation"><a href="view/login.php?action=logout">Logout</a></li>
