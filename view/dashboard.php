@@ -62,7 +62,7 @@
       $i = 1; 
       $totalhtml = "";
       foreach ($final_output as $class => $student_values) {
-        $html1 = '<input type="checkbox" id="check"><h2>'.$class.'</h2>';
+        $html1 = '<h2>'.$class.'</h2>';
         foreach ($student_values as $number_text => $number_and_names) {
           foreach ($number_and_names as $number => $names) {
             foreach ($names as $key => $name) {
