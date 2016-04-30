@@ -32,7 +32,16 @@
   
  ?>
 <div class="container">
-
+ <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="../index.php">Home</a></li>
+            <li role="presentation"><a href="http://vefetch.com/">About</a></li>
+            <li role="presentation"><a href="view/login.php?action=logout">Logout</a></li>
+          </ul>
+        </nav>
+        <img src="../images/company_logo.png" height="125px" width="220px">
+      </div>
 
 
 <h1>Select Contacts</h1>
@@ -52,7 +61,7 @@
       $i = 1; 
       $totalhtml = "";
       foreach ($final_output as $class => $student_values) {
-        $html1 = "<h2>$class</h2>";
+        $html1 = '<input type="checkbox" id="check"><h2>'.$class.'</h2>';
         foreach ($student_values as $number_text => $number_and_names) {
           foreach ($number_and_names as $number => $names) {
             foreach ($names as $key => $name) {
