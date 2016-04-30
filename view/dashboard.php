@@ -43,7 +43,7 @@
         <img src="../images/company_logo.png" height="125px" width="220px">
       </div>
 
-
+<hr/>
 <h1>Select Contacts</h1>
 
 <form method="post" action="message_process.php">
