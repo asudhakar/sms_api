@@ -23,9 +23,9 @@
 	}
 	function createSession($data){
 		$userDetails['id'] = '1';
-	 	$userDetails['username'] = 'demo';
+	 	$userDetails['username'] = 'vidyasaagar';
 	 	$userDetails['email'] = 'vefetchtechnologies@gmail.com';
-	 	$userDetails['password'] = 'demo1234';
+	 	$userDetails['password'] = 'vidyasaagar';
 	 	$userDetails['admin'] = '1';
 		$_SESSION["userDetails"] = base64_encode(serialize($userDetails));
 		if(isset($_SESSION['userDetails'])){
@@ -50,7 +50,7 @@
 	function isValidateUser($username, $password){
 		realEscape($username);
 		realEscape($password);
-		if($username == "demo" && $password == "demo1234"){
+		if($username == "vidyasaagar" && $password == "vidyasaagar"){
 			return createSession($username);
 		}else{
 			return false;
@@ -67,7 +67,7 @@
 		return mysqli_query($link, $query);
 	}
 	function db_connect_local(){
-		$connection = mysqli_connect('localhost', "root", "1234", "vidyasaagar");
+		$connection = mysqli_connect('localhost', "root", "palaniM@67", "vidyasaagar");
 			if (!$connection) {
 			    die("Connection failed: " . mysqli_connect_error());
 			    exit();

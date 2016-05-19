@@ -1,6 +1,6 @@
 <?php 
 
-include_once '../controllers/function.php';
+
  ?>
 
 
@@ -26,7 +26,6 @@ include_once '../controllers/function.php';
 		  	<input type="text-box" class="form-control" name="template_name" placeholder="enter you title here" required>
 		  	<br/>
 		  	 <textarea name="template-message" class="form-control message-box" rows="5" id="comment" placeholder="enter your message here" ></textarea>
-         <br/>
 		  	 <input type="submit" class="btn btn-primary">
 		  	 <a href="../index.php"><input type="button" class="btn btn-warning" value="cancel"></a>
 		</form>
@@ -37,17 +36,9 @@ include_once '../controllers/function.php';
 			
 			<?php
 
-				$link = db_connect();
-        $sql = "SELECT * FROM `message_templates`";
-        $result = executeQuery($sql, $link);
-        while($row = mysqli_fetch_assoc($result)) {
-          $show_templates[][$row['id']] = $row['template_message'];
-        }
+				
 
 
-        foreach ($show_templates as $template_name => $template_message) {
-          
-        }
 
 			?>
 
