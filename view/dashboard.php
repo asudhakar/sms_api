@@ -33,7 +33,16 @@
  ?>
 <div class="container">
 
-
+<div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="http://vefetch.com/">About</a></li>
+            <li role="presentation"><a href="view/login.php?action=logout">Logout</a></li>
+          </ul>
+        </nav>
+        <img src="images/company_logo.png" height="125px" width="220px">
+      </div>
 
 <h1>Select Contacts</h1>
 
@@ -73,7 +82,10 @@
 
   </form>
 </div>
+<footer class="footer">
 
+         <p style="text-align: center">All rights are reserved by <a href="http://vefetch.com/">Vefetch</a>, Developed by <a href="https://twitter.com/sudhakar_valar">@sudhakar</a>.</p>
+      </footer>
 
 <script type="text/javascript">
   
