@@ -50,12 +50,12 @@
       $i = 1; 
       $totalhtml = "";
       foreach ($final_output as $class => $student_values) {
-      	$html1 = '<input type="checkbox" class="checkthis"><h1>'.$class.'</h1>';
+      	$html1 = '<label><input type="checkbox" class="checkthis"><h4>'.$class.'</h4></label>';
       	foreach ($student_values as $number_text => $number_and_names) {
       		foreach ($number_and_names as $number => $names) {
       			foreach ($names as $key => $name) {
       				$html1 = $html1.'
-  <label><input type="checkbox" name = "name[]" value="'.$number.'"> &nbsp;&nbsp;'.$name.'('.$number.')</label>&#10;';
+  <label><input type="checkbox" name = "name[]" value="'.$number.'">'.$name.'('.$number.')</label><br>';
       			}
       		}$totalhtml = $totalhtml.'<div class="checkbox"><fieldset>'.$html1.'</fieldset></div><hr/>';
       	}
