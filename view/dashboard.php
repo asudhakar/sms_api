@@ -50,7 +50,7 @@
       $i = 1; 
       $totalhtml = "";
       foreach ($final_output as $class => $student_values) {
-      	$html1 = '<label><input type="checkbox" class="checkthis"><p>'.$class.'</p></label><br>';
+      	$html1 = '<label><input type="checkbox" class="checkthis"><p style="text-align: center;font-size: 27px;font-style: initial;">'.$class.'</p></label><br>';
       	foreach ($student_values as $number_text => $number_and_names) {
       		foreach ($number_and_names as $number => $names) {
       			foreach ($names as $key => $name) {
