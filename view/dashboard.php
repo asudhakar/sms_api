@@ -77,6 +77,12 @@
 
 <script type="text/javascript">
   
+$(function () {
+    $('.checkthis').on('click', function () {
+        $(this).closest('fieldset').find(':checkbox').prop('checked', this.checked);
+    });
+});
+
 
 $('body').on('change', '#checkAll', function(){
       $("input:checkbox").prop('checked', $(this).prop("checked"));
