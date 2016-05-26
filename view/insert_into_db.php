@@ -14,7 +14,7 @@ $path = $_POST['path'];
 $link = db_connect();
 
 foreach ($name_and_numbers as $key => $number) {
-	$sql = "INSERT INTO `MessageOut` (`MessageTo` , `MessageText`) VALUES ('$number', '$message')";
+	$sql = 'http://123.63.33.43/blank/sms/user/urlsmstemp.php?username=jayamfn&pass=jayam1234&senderid=JAYAMFN&dest_mobileno='.$number.'&msgtype=UNI&message='.$message.'&response=Y';
 	echo $sql;
 	// executeQuery($sql, $link);
 	
