@@ -62,6 +62,7 @@ function updateCount() {
       <?php 
         $sql = "SELECT `template_name`, `template_message` FROM `message_templates`";
         $link = db_connect_local();
+        mysqli_set_charset($link, 'utf8mb4'); 
         $result = executeQuery($sql, $link);
         while($row = mysqli_fetch_assoc($result)) {
           $final_output[$row['template_name']] = $row['template_message'];
