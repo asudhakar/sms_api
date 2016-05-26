@@ -16,6 +16,7 @@ $link = db_connect();
 foreach ($name_and_numbers as $key => $number) {
 	$sql = "INSERT INTO `MessageOut` (`MessageTo` , `MessageText`) VALUES ('$number', '$message')";
 	echo $sql;
+	mysqli_set_charset($link, 'utf8mb4'); 
 	executeQuery($sql, $link);
 	
 }
