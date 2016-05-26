@@ -8,7 +8,7 @@ $name_and_number = base64_encode(serialize($name_and_number));
 ?>
 
 <html><head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
 
