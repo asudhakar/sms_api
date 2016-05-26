@@ -7,6 +7,7 @@ if(isset($_GET['delete'])){
 }else{
 	$template_name = $_POST['template_name'];
 	$template_message = $_POST['template-message'];
+	mysqli_set_charset($link, 'utf8mb4'); 
 	insert_template($template_name, $template_message, $link);
 }
 
